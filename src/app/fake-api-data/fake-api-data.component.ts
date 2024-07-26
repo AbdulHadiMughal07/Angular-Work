@@ -15,10 +15,10 @@ export class FakeApiDataComponent {
 
   public users : any;
 
-  constructor (private servicepage : UserdataService){}
+  constructor (private abc : UserdataService){}
 
   ngOnInit(){
-    this.servicepage.getdata().subscribe(xyz => {
+    this.abc.getdata().subscribe(xyz => {
       this.users = xyz;
     }
     )
